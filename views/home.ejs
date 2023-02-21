@@ -1,0 +1,20 @@
+
+<%- include("partials/header"); -%>
+    <h1>Home</h1>
+    <p> <%= startingContent  %> </p>
+
+    <% console.log(posts); %>
+
+    <!-- for(var i=0; i<posts.length; i++) {  -->
+  <%  posts.forEach(function(post) { %>
+    <%# to render the title and paragraph on home %>
+      <h1><%=post.title%></h1>
+      <p><%=post.content.substring(0,100) + " ..."%>
+      <a href="/posts/<%= post.title%>">Read More</a>  
+      </p>
+
+      <%# substring is used to truncate the post content %>
+
+  <%  }) %>
+
+<%- include("partials/footer"); -%>
