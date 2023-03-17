@@ -1,5 +1,3 @@
-<<<<<<< HEAD
+
 # blogproject
-=======
-# blogproject
->>>>>>> master
+
